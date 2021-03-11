@@ -1,4 +1,9 @@
 package com.example.swwiki.model
 
-class Results {
-}
+import com.example.swwiki.model.PeopleData
+
+
+data class Results(
+    var results: List<PeopleData>
+
+)
