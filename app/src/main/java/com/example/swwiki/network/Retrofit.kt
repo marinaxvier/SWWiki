@@ -12,5 +12,11 @@ class Retrofit {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
         }
+
+
+    fun getService(): ISWService {
+        return getRetrofitInstance().create(ISWService::class.java)
+    }
+
     }
 }
