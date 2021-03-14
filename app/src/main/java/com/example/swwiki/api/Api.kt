@@ -1,18 +1,19 @@
-package com.example.swwiki.network
+package com.example.swwiki.api
 
 import com.example.swwiki.model.FirstResponse
 import com.example.swwiki.model.People
+import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path
 
-interface ISWService {
+interface Api {
     //Busca lista de itens de menu
     @GET(" ")
-    fun getResults(): retrofit2.Call<FirstResponse>
+    suspend fun getFirstResponse(): Response<FirstResponse>
     //Busca lista de pessoas
     @GET("people/")
-    fun getPeople(): retrofit2.Call<People>
+    fun getPeople(): Response<People>
     //Busca pessoa específica
     @GET("people/{id}")
-    fun getPeople(@Path("id") id : String): retrofit2.Call<People>
+    fun getPeople(@Path("id") id : String): Response<People>
 }
