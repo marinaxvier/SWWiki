@@ -12,7 +12,9 @@ import com.example.swwiki.R
 class InitialMenuAdapter(
     val context: Context,
     val itemsList: List<String>
-): RecyclerView.Adapter<InitialMenuViewHolder>() {
+): RecyclerView.Adapter<InitialMenuAdapter.InitialMenuViewHolder>() {
+
+    var onItemClick: ((urlType: String)-> Unit)? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): InitialMenuViewHolder {
         val view =
@@ -63,14 +65,17 @@ class InitialMenuAdapter(
     }
 
     override fun getItemCount() = itemsList.size
-}
 
-class InitialMenuViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-    var tvInitialMenuListItem: TextView? = null
-    var ivInitialMenuListItemImage: ImageView? = null
+    inner class InitialMenuViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        var tvInitialMenuListItem: TextView? = null
+        var ivInitialMenuListItemImage: ImageView? = null
 
-    init {
-        tvInitialMenuListItem = itemView.findViewById<TextView>(R.id.tvInitialMenuListItemTitle)
-        ivInitialMenuListItemImage = itemView.findViewById<ImageView>(R.id.ivInitialMenuListItemImage)
+        init {
+            tvInitialMenuListItem = itemView.findViewById<TextView>(R.id.tvInitialMenuListItemTitle)
+            ivInitialMenuListItemImage = itemView.findViewById<ImageView>(R.id.ivInitialMenuListItemImage)
+            itemView.setOnClickListener {
+                onItemClick?.invoke(itemsList[adapterPosition])
+            }
+        }
     }
 }
