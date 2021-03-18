@@ -1,7 +1,7 @@
 package com.example.swwiki.repository
 
-import androidx.lifecycle.MutableLiveData
 import com.example.swwiki.model.FirstResponse
+import com.example.swwiki.model.PeopleResponse
 import com.example.swwiki.network.Retrofit
 import retrofit2.Response
 
@@ -11,4 +11,7 @@ class Repository {
         return Retrofit.api.getFirstResponse()
     }
 
+    suspend fun getPeople(): Response<PeopleResponse> {
+        return Retrofit.api.getPeople()
+    }
 }
