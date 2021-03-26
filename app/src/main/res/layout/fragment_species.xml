@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PeopleFragment"
+    android:background="@color/darkGray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvClassificationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:text="Classification"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvClassification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Classification"
+                android:textColor="@color/yellow"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/tvClassificationTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvClassificationTitle" />
+
+            <TextView
+                android:id="@+id/tvDesignationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Designation"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/tvAverageLifespan"
+                app:layout_constraintTop_toTopOf="@+id/tvAverageHeightTitle" />
+
+            <TextView
+                android:id="@+id/tvDesignation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Designation"
+                android:textColor="@color/yellow"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/tvDesignationTitle"
+                app:layout_constraintTop_toBottomOf="@id/tvDesignationTitle" />
+
+
+            <TextView
+                android:id="@+id/tvAverageHeightTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Average Height"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/tvClassification"
+                app:layout_constraintTop_toBottomOf="@+id/tvClassification" />
+
+            <TextView
+                android:id="@+id/tvAverageHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Average Height"
+                android:textColor="@color/yellow"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/tvAverageHeightTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvAverageHeightTitle" />
+
+            <TextView
+                android:id="@+id/tvSkinColorsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Skin Colors"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/tvLanguage"
+                app:layout_constraintTop_toBottomOf="@+id/tvLanguage" />
+
+            <TextView
+                android:id="@+id/tvSkinColors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Skin Colors"
+                android:textColor="@color/yellow"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/tvSkinColorsTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvSkinColorsTitle" />
+
+            <TextView
+                android:id="@+id/tvEyeColorsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Eye Colors"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/tvHairColors"
+                app:layout_constraintTop_toBottomOf="@+id/tvHairColors" />
+
+            <TextView
+                android:id="@+id/tvEyeColors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Eye Colors"
+                android:textColor="@color/yellow"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/tvEyeColorsTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvEyeColorsTitle" />
+
+            <TextView
+                android:id="@+id/tvHairColorsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Hair Colors"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/tvSkinColors"
+                app:layout_constraintTop_toBottomOf="@+id/tvSkinColors" />
+
+            <TextView
+                android:id="@+id/tvHairColors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Hair Colors"
+                android:textColor="@color/yellow"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/tvHairColorsTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvHairColorsTitle" />
+
+            <TextView
+                android:id="@+id/tvAverageLifespanTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:text="Average Lifespan"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvClassificationTitle" />
+
+            <TextView
+                android:id="@+id/tvAverageLifespan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Average Lifespan"
+                android:textColor="@color/yellow"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/tvAverageLifespanTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvAverageLifespanTitle" />
+
+            <TextView
+                android:id="@+id/tvLanguageTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Language"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/tvAverageHeight"
+                app:layout_constraintTop_toBottomOf="@+id/tvAverageHeight" />
+
+            <TextView
+                android:id="@+id/tvLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Language"
+                android:textColor="@color/yellow"
+                android:textSize="16sp"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintStart_toStartOf="@+id/tvLanguageTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvLanguageTitle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

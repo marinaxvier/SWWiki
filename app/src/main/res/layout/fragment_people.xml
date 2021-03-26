@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PeopleFragment"
+    android:background="@color/darkGray">
+
+
+    <TextView
+        android:id="@+id/tvHeightTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="40dp"
+        android:text="Height"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Height"
+        android:textSize="16sp"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvHeightTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvHeightTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeightTitle" />
+
+    <TextView
+        android:id="@+id/tvMassTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="70dp"
+        android:text="Mass"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvHeightTitle" />
+
+    <TextView
+        android:id="@+id/tvMass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mass"
+        android:textSize="16sp"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvMassTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvMassTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvMassTitle" />
+
+
+    <TextView
+        android:id="@+id/tvHairColorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hair Color"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvHeight"
+        app:layout_constraintStart_toStartOf="@+id/tvHeight"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeight" />
+
+    <TextView
+        android:id="@+id/tvHairColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hair Color"
+        android:textSize="16sp"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvHairColorTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvHairColorTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvHairColorTitle"/>
+
+    <TextView
+        android:id="@+id/tvSkinColorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skin Color"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvMass"
+        app:layout_constraintStart_toStartOf="@+id/tvMass"
+        app:layout_constraintTop_toTopOf="@+id/tvHairColorTitle" />
+
+    <TextView
+        android:id="@+id/tvSkinColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skin Color"
+        android:textSize="16sp"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvSkinColorTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvSkinColorTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvSkinColorTitle"/>
+
+    <TextView
+        android:id="@+id/tvEyeColorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eye Color"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvHairColor"
+        app:layout_constraintStart_toStartOf="@+id/tvHairColor"
+        app:layout_constraintTop_toBottomOf="@+id/tvHairColor" />
+
+    <TextView
+        android:id="@+id/tvEyeColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eye Color"
+        android:textSize="16sp"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvEyeColorTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvEyeColorTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvEyeColorTitle"/>
+
+    <TextView
+        android:id="@+id/tvBirthYearTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birth Year"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvSkinColor"
+        app:layout_constraintStart_toStartOf="@+id/tvSkinColor"
+        app:layout_constraintTop_toTopOf="@+id/tvEyeColorTitle" />
+
+    <TextView
+        android:id="@+id/tvBirthYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birth Year"
+        android:textSize="16sp"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvBirthYearTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvBirthYearTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvBirthYearTitle"/>
+
+    <TextView
+        android:id="@+id/tvGenderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvEyeColor"
+        app:layout_constraintStart_toStartOf="@+id/tvEyeColor"
+        app:layout_constraintTop_toBottomOf="@+id/tvEyeColor" />
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textSize="16sp"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvGenderTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvGenderTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvGenderTitle"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
