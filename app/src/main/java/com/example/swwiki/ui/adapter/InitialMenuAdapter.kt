@@ -10,8 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.swwiki.R
 
 class InitialMenuAdapter(
-    val context: Context,
-    val itemsList: List<String>
+        private val context: Context,
+        private val itemsList: List<String>
 ): RecyclerView.Adapter<InitialMenuAdapter.InitialMenuViewHolder>() {
 
     var onItemClick: ((urlType: String)-> Unit)? = null
@@ -25,7 +25,7 @@ class InitialMenuAdapter(
     }
 
     override fun onBindViewHolder(holder: InitialMenuViewHolder, position: Int) {
-        var item = itemsList.get(position)
+        var item = itemsList[position]
 
         when(item.toLowerCase()){
 

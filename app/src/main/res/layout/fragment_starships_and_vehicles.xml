@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.StarshipsFragment"
+    android:background="@color/darkGray">
+
+    <TextView
+        android:id="@+id/tvModelTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="40dp"
+        android:text="Model"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Model"
+        android:textSize="16sp"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvModelTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvModelTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvModelTitle" />
+
+    <TextView
+        android:id="@+id/tvLengthTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="70dp"
+        android:text="Length"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Length"
+        android:textSize="16sp"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvLengthTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvLengthTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvLengthTitle" />
+
+    <TextView
+        android:id="@+id/tvPassengersTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Passengers"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvModel"
+        app:layout_constraintStart_toStartOf="@+id/tvModel"
+        app:layout_constraintTop_toBottomOf="@+id/tvModel" />
+
+
+    <TextView
+        android:id="@+id/tvPassengers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passengers"
+        android:textSize="16sp"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvPassengersTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvPassengersTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvPassengersTitle" />
+
+    <TextView
+        android:id="@+id/tvCargoCapacityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Cargo Capacity"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvLength"
+        app:layout_constraintStart_toStartOf="@+id/tvLength"
+        app:layout_constraintTop_toBottomOf="@+id/tvLength" />
+
+    <TextView
+        android:id="@+id/tvCargoCapacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cargo Capacity"
+        android:textSize="16sp"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvCargoCapacityTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvCargoCapacityTitle"
+        app:layout_constraintTop_toBottomOf="@id/tvCargoCapacityTitle" />
+
+
+    <TextView
+        android:id="@+id/tvMaxAtmospheringSpeedTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Max Atmosphering Speed"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvPassengers"
+        app:layout_constraintTop_toBottomOf="@+id/tvPassengers" />
+
+    <TextView
+        android:id="@+id/tvMaxAtmospheringSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max Atmosphering Speed"
+        android:textColor="@color/yellow"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvMaxAtmospheringSpeedTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvMaxAtmospheringSpeedTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvMaxAtmospheringSpeedTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

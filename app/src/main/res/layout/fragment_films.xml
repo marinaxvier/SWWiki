@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.FilmsFragment"
+    android:background="@color/darkGray">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:id="@+id/tvFilmEpisode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Episode 5"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvFilmDirectorTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Director"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvFilmEpisode" />
+
+            <TextView
+                android:id="@+id/tvFilmDirector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Director"
+                android:textColor="@color/yellow"
+                app:layout_constraintStart_toEndOf="@+id/tvFilmDirectorTitle"
+                app:layout_constraintTop_toTopOf="@+id/tvFilmDirectorTitle" />
+
+            <TextView
+                android:id="@+id/tvFilmProducerTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Producer"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/tvFilmDirectorTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvFilmDirectorTitle" />
+
+            <TextView
+                android:id="@+id/tvFilmProducer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Producer"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/yellow"
+                app:layout_constraintStart_toEndOf="@+id/tvFilmProducerTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvFilmDirector" />
+
+            <TextView
+                android:id="@+id/tvFilmReleaseDateTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Release Date"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/tvFilmProducerTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvFilmProducerTitle" />
+
+            <TextView
+                android:id="@+id/tvFilmReleaseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Release Date"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/yellow"
+                app:layout_constraintStart_toEndOf="@+id/tvFilmReleaseDateTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvFilmProducer" />
+
+            <TextView
+                android:id="@+id/tvOpeningCrawl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Opening Crawl"
+                android:textAlignment="inherit"
+                android:textSize="18sp"
+                android:textColor="@color/yellow"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvFilmReleaseDate"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

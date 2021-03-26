@@ -17,9 +17,6 @@ import kotlinx.android.synthetic.main.activity_initial_menu.*
 class InitialMenuActivity : AppCompatActivity() {
 
     private lateinit var viewModel: InitialMenuViewModel
-    override fun setTitle(title: CharSequence?) {
-        super.setTitle("Star Wars Wiki")
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,7 +47,7 @@ class InitialMenuActivity : AppCompatActivity() {
         }
 
         initialAdapter.onItemClick = {urlType ->
-            val initialMenuIntent: Intent = Intent(this,ItemListClickedActivity::class.java)
+            val initialMenuIntent: Intent = Intent(this,ListActivity::class.java)
             initialMenuIntent.putExtra("URL", urlType)
             startActivity(initialMenuIntent)
         }

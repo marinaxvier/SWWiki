@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PeopleFragment"
+    android:background="@color/darkGray">
+
+
+    <TextView
+        android:id="@+id/tvRotationPeriodTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:text="Rotation Period"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRotationPeriod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rotation Period"
+        android:textSize="16sp"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvRotationPeriodTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvRotationPeriodTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvRotationPeriodTitle" />
+
+    <TextView
+        android:id="@+id/tvOrbitalPeriodTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:text="Orbital Period"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvOrbitalPeriod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Orbital Period"
+        android:textSize="16sp"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvOrbitalPeriodTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvOrbitalPeriodTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvOrbitalPeriodTitle" />
+
+
+
+    <TextView
+        android:id="@+id/tvDiameterTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diameter"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvRotationPeriod"
+        app:layout_constraintStart_toStartOf="@+id/tvRotationPeriod"
+        app:layout_constraintTop_toBottomOf="@+id/tvRotationPeriod" />
+
+    <TextView
+        android:id="@+id/tvDiameter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diameter"
+        android:textSize="16sp"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvDiameterTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvDiameterTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvDiameterTitle"/>
+
+    <TextView
+        android:id="@+id/tvClimateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Climate"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvOrbitalPeriod"
+        app:layout_constraintStart_toStartOf="@+id/tvOrbitalPeriod"
+        app:layout_constraintTop_toTopOf="@+id/tvDiameterTitle" />
+
+    <TextView
+        android:id="@+id/tvClimate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Climate"
+        android:textSize="16sp"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvClimateTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvClimateTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvClimateTitle"/>
+
+    <TextView
+        android:id="@+id/tvGravityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gravity"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvDiameter"
+        app:layout_constraintStart_toStartOf="@+id/tvDiameter"
+        app:layout_constraintTop_toBottomOf="@+id/tvDiameter" />
+
+    <TextView
+        android:id="@+id/tvGravity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gravity"
+        android:textSize="16sp"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvGravityTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvGravityTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvGravityTitle"/>
+
+    <TextView
+        android:id="@+id/tvTerrainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terrain"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvClimate"
+        app:layout_constraintStart_toStartOf="@+id/tvClimate"
+        app:layout_constraintTop_toTopOf="@+id/tvGravityTitle" />
+
+    <TextView
+        android:id="@+id/tvTerrain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terrain"
+        android:textSize="16sp"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvTerrainTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvTerrainTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvTerrainTitle"/>
+
+    <TextView
+        android:id="@+id/tvSurfaceWaterTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Surface Water"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvGravity"
+        app:layout_constraintStart_toStartOf="@+id/tvGravity"
+        app:layout_constraintTop_toBottomOf="@+id/tvGravity" />
+
+    <TextView
+        android:id="@+id/tvSurfaceWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Surface Water"
+        android:textSize="16sp"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvSurfaceWaterTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvSurfaceWaterTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvSurfaceWaterTitle"/>
+
+    <TextView
+        android:id="@+id/tvPopulationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Population"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvTerrain"
+        app:layout_constraintStart_toStartOf="@+id/tvTerrain"
+        app:layout_constraintTop_toTopOf="@+id/tvSurfaceWaterTitle" />
+
+    <TextView
+        android:id="@+id/tvPopulation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Population"
+        android:textSize="16sp"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvPopulationTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvPopulationTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvPopulationTitle"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

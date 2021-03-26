@@ -1,6 +1,7 @@
 package com.example.swwiki.model
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 class PeopleData (
     var name: String,
