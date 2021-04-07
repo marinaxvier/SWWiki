@@ -1,4 +1,4 @@
-package com.example.swwiki.ui
+package com.example.swwiki.ui.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,10 +8,17 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.swwiki.R
 import com.example.swwiki.model.Favorite
+import com.example.swwiki.repository.Repository
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.launch
+import kotlin.coroutines.CoroutineContext
 
 class FavoriteListAdapter(
     private val context: Context,
-    private val list: List<Favorite>
+    private val list: ArrayList<Favorite>,
+    private val repository: Repository
 ): RecyclerView.Adapter<FavoriteListAdapter.FavoriteViewHolder>() {
 
     var onItemClick: ((Favorite) -> Unit)? = null
@@ -30,6 +37,18 @@ class FavoriteListAdapter(
     }
 
     override fun getItemCount() = list.size
+
+     fun deleteItem(pos: Int) {
+         var clickedItem = list[pos]
+         list.removeAt(pos)
+         notifyItemRemoved(pos)
+
+         GlobalScope.launch {
+             repository.removeFavorite(clickedItem)
+         }
+
+    }
+
 
     inner class FavoriteViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         var tvName: TextView? = null

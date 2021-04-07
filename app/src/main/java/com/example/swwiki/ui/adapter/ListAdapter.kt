@@ -32,6 +32,7 @@ class ListAdapter(
 
     override fun getItemCount() = itemsList.size
 
+
     inner class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var tvName: TextView? = null
         init {
