@@ -1,5 +1,7 @@
 package com.example.swwiki.repository
 
+import com.example.swwiki.model.Favorite
+import com.example.swwiki.database.FavoriteDAO
 import com.example.swwiki.model.SpeciesData
 import com.example.swwiki.model.SpeciesResponse
 import com.example.swwiki.model.VehiclesData
@@ -10,7 +12,20 @@ import com.example.swwiki.model.FilmsData
 import com.example.swwiki.model.StarshipsData
 import retrofit2.Response
 
-class Repository {
+class Repository(private val favoriteDAO: FavoriteDAO? = null) {
+
+
+    suspend fun getAllFavorites(): List<Favorite> {
+        return favoriteDAO!!.getAllFavorites()
+    }
+
+    suspend fun addFavorite(favorite: Favorite){
+        favoriteDAO!!.addFavorite(favorite)
+    }
+
+    suspend fun removeFavorite(favorite: Favorite){
+        favoriteDAO!!.removeFavorite(favorite)
+    }
 
     suspend fun getData(): Response<FirstResponse> {
         return Retrofit.api.getFirstResponse()

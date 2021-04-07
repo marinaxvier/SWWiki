@@ -59,6 +59,14 @@ class InitialMenuAdapter(
                 holder.tvInitialMenuListItem?.text = "Starships"
             }
 
+            "favorites" -> {
+                holder.tvInitialMenuListItem?.text = "Favorites"
+            }
+
+            "search" -> {
+                holder.tvInitialMenuListItem?.text = "Search"
+            }
+
 
 
         }

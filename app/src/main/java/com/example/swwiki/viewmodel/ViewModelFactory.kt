@@ -66,4 +66,23 @@ class SpeciesFragmentViewModelFactory(
     override  fun <T:ViewModel?> create(modelClass: Class<T>): T{
         return SpeciesFragmentViewModel(repository) as T
     }
+
+}
+
+class FavoriteViewModelFactory(
+    private val repository: Repository
+): ViewModelProvider.Factory{
+    override  fun <T:ViewModel?> create(modelClass: Class<T>): T{
+        return FavoriteViewModel(repository) as T
+    }
+
+}
+
+class DetailViewModelFactory(
+    private val repository: Repository
+): ViewModelProvider.Factory{
+    override  fun <T:ViewModel?> create(modelClass: Class<T>): T{
+        return DetailViewModel(repository) as T
+    }
+
 }

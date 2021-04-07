@@ -33,7 +33,7 @@ class InitialMenuActivity : AppCompatActivity() {
                 Log.d("Response", firstResponse.errorBody().toString())
             }
         })
-        val listSample: ArrayList<String> = arrayListOf("people", "planets", "starships", "films", "vehicles", "species")
+        val listSample: ArrayList<String> = arrayListOf("people", "planets", "starships", "films", "vehicles", "species", "favorites", "search")
         listConfig(listSample)
     }
 
@@ -47,9 +47,16 @@ class InitialMenuActivity : AppCompatActivity() {
         }
 
         initialAdapter.onItemClick = {urlType ->
-            val initialMenuIntent: Intent = Intent(this,ListActivity::class.java)
-            initialMenuIntent.putExtra("URL", urlType)
-            startActivity(initialMenuIntent)
+
+            if (urlType == "favorites"){
+                val favoriteIntent: Intent = Intent(this, FavoriteActivity::class.java)
+                startActivity(favoriteIntent)
+
+            } else {
+                val initialMenuIntent: Intent = Intent(this, ListActivity::class.java)
+                initialMenuIntent.putExtra("URL", urlType)
+                startActivity(initialMenuIntent)
+            }
         }
     }
 }

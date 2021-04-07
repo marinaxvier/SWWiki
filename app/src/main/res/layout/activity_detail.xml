@@ -17,7 +17,7 @@
         android:text="TextView"
         android:textColor="@color/yellow"
         android:textSize="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -43,6 +43,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2" />
 
+    <ImageView
+        android:id="@+id/ivFavorite"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/ic_star_border"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDetailName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvDetailName" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

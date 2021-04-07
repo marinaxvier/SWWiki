@@ -3,7 +3,6 @@ package com.example.swwiki.ui
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -138,10 +137,10 @@ class ListActivity : AppCompatActivity() {
         }
 
         listAdapter.onItemClick = {clickedItem ->
-            val listIntent: Intent = Intent(this,DetailActivity::class.java)
-            listIntent.putExtra("ITEM", clickedItem)
-            listIntent.putExtra("TYPE", type)
-            startActivity(listIntent)
+            val detailIntent: Intent = Intent(this,DetailActivity::class.java)
+            detailIntent.putExtra("ITEM", clickedItem)
+            detailIntent.putExtra("TYPE", type)
+            startActivity(detailIntent)
         }
 
     }
